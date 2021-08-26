@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Js Game - Poojitha Irosha</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bdy" onload="onLoadAnimation();" onkeyup="onKeyUpAnimation(event);">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Score Board -->
+            <h1 class="d-flex justify-content-center mt-3 text-light">
+                Score&nbsp;: &nbsp;
+                <span id="scoreDisplay" class="badge bg-primary col-1">0</span>
+            </h1>
+            <!-- Controll Buttons -->
+            <div class="btn-group col-4 offset-4 mt-2" role="group" aria-label="Basic example">
+                <button onclick="clearAllAnimations();" type="button" class="btn btn-light">
+						<img class="controlBtn" src="./img/pause-fill.svg" />
+					</button>
+                <button onclick="reloadGame();" type="button" class="btn btn-secondary">
+						<img class="controlBtn" src="./img/arrow-repeat.svg" alt="" />
+					</button>
+            </div>
+            <!-- Game Area -->
+            <div class="col-12" id="gameArea">
+                <img src="./img/Idle (1).png" id="characterImageId" class="character" alt="" />
+            </div>
+            <h1 id="gameStartText" class="text-light text-center gameStartText">
+                Press <kbd>Enter</kbd> to start
+            </h1>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
