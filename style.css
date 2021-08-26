@@ -1,34 +1,46 @@
 .bdy {
-	background-color: #34495e;
+    background-color: #34495e;
 }
+
 
 /* character */
+
 .character {
-	width: 200px;
-	margin-top: 150px;
-	margin-left: 100px;
-	position: absolute;
-	transition: 0.2s;
+    width: 230px;
+    margin-top: 150px;
+    margin-left: 100px;
+    position: absolute;
 }
+
 
 /* Buttons */
+
 .controlBtn {
-	width: 25px;
+    width: 25px;
 }
+
 
 /* Press Enter to start */
+
 .gameStartText {
-	margin-top: 300px;
+    margin-top: 300px;
 }
 
+
 /* box */
+
 .box {
-	position: absolute;
-	background-color: #dc143c;
-	border-radius: 10px;
-	border: 3px solid black;
-	width: 70px;
-	height: 70px;
-	/* margin-top: 340px; */
-	/* margin-left: 1000px; */
+    position: absolute;
+    background-color: #dc143c;
+    border-radius: 7px;
+    border: 3px solid yellow;
+    width: 20px;
+    height: 70px;
+    margin-top: 340px;
+}
+
+.img {
+    position: absolute;
+    margin-top: 360px;
+    width: 70px;
 }

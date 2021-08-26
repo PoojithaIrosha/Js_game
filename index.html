@@ -9,7 +9,7 @@
 </head>
 
 <body class="bdy" onload="onLoadAnimation();" onkeyup="onKeyUpAnimation(event);">
-    <div class="container-fluid">
+    <div class="container-fluid d-none d-lg-block">
         <div class="row">
             <!-- Score Board -->
             <h1 class="d-flex justify-content-center mt-3 text-light">
@@ -29,9 +29,13 @@
             <div class="col-12" id="gameArea">
                 <img src="./img/Idle (1).png" id="characterImageId" class="character" alt="" />
             </div>
-            <h1 id="gameStartText" class="text-light text-center gameStartText">
-                Press <kbd>Enter</kbd> to start
-            </h1>
+            <div class="col-12" id="gameOver">
+
+                <h1 id="gameStartText" class="text-light text-center gameStartText">
+                    Press <kbd>Enter</kbd> to start
+                </h1>
+                <h1 id="finalScore" class="text-light bg-warning text-center text-dark col-4 rounded-3 offset-4"></h1>
+            </div>
         </div>
     </div>
     <script src="./script.js"></script>
