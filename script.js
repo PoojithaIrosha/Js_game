@@ -120,7 +120,7 @@ function generateRandomBoxes() {
     // Create a div
     var gameArea = document.getElementById("gameArea");
     var box = document.createElement('img');
-    box.src = "./img/div1.png";
+    box.src = "./img/barrier.png";
     box.className = 'img';
     box.id = 'box' + boxId;
     box.style.marginLeft = randomMarginLeft + 'px';
