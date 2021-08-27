@@ -143,7 +143,7 @@ function animateBoxes(id) {
     if (divMarginLeft > 0) {
         div.style.marginLeft = divMarginLeft + 'px';
     } else {
-        div.style.display = 'none';
+        div.remove();
     }
 
     // Check For Out
@@ -168,8 +168,8 @@ function animateBoxes(id) {
             clearInterval(characterRunAnimationId);
             clearInterval(characterJumpAnimationId);
             clearInterval(scoreCountAnimationId);
-            clearInterval(BoxAnimationId);
             clearInterval(BoxAnimationId2);
+            clearInterval(BoxAnimationId);
             isRunning = false;
         }
     }
@@ -183,8 +183,8 @@ function clearAllAnimations() {
     clearInterval(characterRunAnimationId);
     clearInterval(characterJumpAnimationId);
     clearInterval(scoreCountAnimationId);
-    clearInterval(BoxAnimationId);
     clearInterval(BoxAnimationId2);
+    clearInterval(BoxAnimationId);
     startText.style.visibility = 'visible';
     isRunning = false;
 

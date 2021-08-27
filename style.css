@@ -10,6 +10,14 @@
     margin-top: 150px;
     margin-left: 100px;
     position: absolute;
+    z-index: 2;
+}
+
+.img {
+    position: absolute;
+    margin-top: 360px;
+    width: 70px;
+    z-index: 1;
 }
 
 
@@ -37,10 +45,4 @@
     width: 20px;
     height: 70px;
     margin-top: 340px;
-}
-
-.img {
-    position: absolute;
-    margin-top: 360px;
-    width: 70px;
 }
